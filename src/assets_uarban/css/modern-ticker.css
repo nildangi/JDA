@@ -1,0 +1,176 @@
+@charset "utf-8";
+.modern-ticker {
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    overflow: hidden;
+}
+
+.modern-ticker a {
+    text-decoration: none
+}
+
+.modern-ticker ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+.mt-round {
+    border-radius: 0px;
+}
+
+.mt-body {
+    position: relative
+}
+
+.mt-label {
+    margin-right: 2px;
+    position: absolute;
+    left: 0;
+}
+
+.mt-round .mt-label {
+    border-radius: 30px;
+    font-weight: 600;
+    background: #e45e2b;
+    color: #fff;
+    padding: 0 10px;
+}
+
+.mt-news {
+    overflow: hidden;
+    position: absolute
+}
+
+.mt-scroll .mt-news {
+    background-color: transparent;
+}
+
+.mt-news ul {
+    background-repeat: no-repeat;
+    background-position: -1000px
+}
+
+.mt-news li {
+    float: left
+}
+
+.mt-round .mt-news:first-child,
+.mt-round .mt-news:first-child a {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px
+}
+
+.mt-round .mt-news:last-child,
+.mt-round .mt-news:last-child a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px
+}
+
+.mt-news a {
+    font-size: 14px;
+    padding: 0 10px 0 20px;
+    margin-right: 2px;
+    background-repeat: no-repeat;
+    background-position: 7px center;
+    display: block;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.mt-scroll.mt-round .mt-news a {
+    border-radius: 0
+}
+
+.mt-hide {
+    display: none
+}
+
+.mt-controls {
+    margin-left: 2px;
+    position: absolute;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: -1000px;
+    top: 4px;
+}
+
+.mt-next,
+.mt-play,
+.mt-prev {
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+    cursor: pointer
+}
+
+.mt-round .mt-next {}
+
+.modern-ticker {
+    color: #383838;
+}
+
+.mt-label {}
+
+.mt-news {
+    background-color: #fff;
+}
+
+.mt-preloader {
+    background: url(../img/preloader.html) no-repeat center
+}
+
+.mt-news ul {
+    background-image: url(../img/bullet-over.png)
+}
+
+.mt-news a {
+    color: #333;
+    background-image: url(../img/bullet.png);
+}
+
+.mt-news a:hover {
+    color: #7b7b7b;
+    background-image: url(../img/bullet-over.png);
+}
+
+.mt-news a:active {}
+
+.mt-controls {
+    background-image: url(../img/pause1.png)
+}
+
+.mt-next,
+.mt-prev {}
+
+.mt-prev {
+    background-image: url(../img/arrow-prev.png)
+}
+
+.mt-next {
+    background-image: url(../img/arrow-next.png)
+}
+
+.mt-play {
+    background-color: #f5f5f5;
+    background-image: url(../img/play1.html);
+}
+
+.mt-pause {
+    background-image: url(../img/pause1.png)
+}
+
+.mt-next:hover,
+.mt-play:hover,
+.mt-prev:hover {
+    background-color: #eee;
+}
+
+.mt-next:active,
+.mt-play:active,
+.mt-prev:active {
+    background-color: #eee
+}
