@@ -18,29 +18,29 @@ import { Carousel } from 'react-bootstrap';
 
 function Slider() {
   return (
-    <div className='imageslider'>
+    <div className='imageslider' style={{display:'flex'}}>
       <Carousel>
         <Carousel.Item>
           <img
-            style={{ height: '500px', width: '110%' }}
+            style={{ height: '50%', width: '100%' }}
             src={slider1} />
         </Carousel.Item>
 
         <Carousel.Item>
           <img
-            style={{ height: '500px', width: '100%' }}
+            style={{ height: '50%', width: '100%' }}
             src={slider2} className='slide' />
         </Carousel.Item>
 
          <Carousel.Item>
           <img
-            style={{ height: '500px', width: '100%' }}
+            style={{ height: '50%', width: '100%' }}
             src={slider3} className='slide' />
         </Carousel.Item>
 
         <Carousel.Item>
           <img
-            style={{ height: '500px', width: '100%' }}
+            style={{ height: '50%', width: '100%' }}
             src={slider4} className='slide' />
         </Carousel.Item> 
       </Carousel>

@@ -1,0 +1,82 @@
+/* .div-buttom {
+    align-items: center;
+    justify-content: center;
+    align-Content: center;
+    text-Align: center;
+    padding: 10px;
+    margin: 10px 10px;
+
+}
+
+.main-imgButtom{
+    height:80px;
+    width:170px;
+    padding:5px;
+    margin:5px;
+    align-Self:center ;
+    background-Color:#FFFF;
+    border: 1px solid rgba(1, 1, 1, 0.1);
+    box-Shadow:#34495E;
+}  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+
+}
+
+.logos {
+    overflow: hidden;
+    padding: 10px 0;
+    background: rgb(175, 154, 154);
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos::before,
+.logos::after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+
+}
+
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(188, 35, 55));
+}
+
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(188, 35, 55));
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation:15s slide infinite linear;
+
+}
+
+.logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+}
+

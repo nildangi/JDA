@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './components/footer/Footer';
 // import { IconName } from "react-icons/fa6";
 import { RiHomeHeartFill } from "react-icons/ri";
 // import { mdiCarConnected } from '@mdi/js';
@@ -6,6 +7,7 @@ import Slider from '../src/components/Slider'
 // import Carousel from 'react-bootstrap/Carousel';
 import { Carousel } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Navbar from './components/navbar/Navbar'
 // <=======CSS======>
 import './App.css';
 import './assets_uarban/css/animate.css'
@@ -54,7 +56,7 @@ import oat from './images/slider/oat.jpg'
 import building1 from './images/slider/building(1).jpg'
 import cmhelpline from './images/slider/loader.png'
 import { BiDirections } from 'react-icons/bi';
-import ButtomSlider from './components/ButtomSlider';
+import ButtomSlider from './components/buttomNav/ButtomSlider';
 import slider1 from './images/slider/slide1.jpg'
 import slider2 from './images/slider/slide2.jpg'
 import slider3 from './images/slider/slide3.jpg'
@@ -69,8 +71,10 @@ import SubPart3 from './images/Photos/SubPart3.jpg'
 import SubPart4 from './images/Photos/SubPart4.jpg'
 import log from './images/header/5172658.jpg'
 import logo5 from './images/Photos/logo5.jpg'
-{/* <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"></link> */}
+import logo6 from './images/header/logo6.jpg'
+
+//  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+//       rel="stylesheet"></link> 
 
 // <=======JavaScript========>     
 // import './assets_uarban/js/bootstrap.min.js'
@@ -86,6 +90,28 @@ import logo5 from './images/Photos/logo5.jpg'
 
 
 function App() {
+    const divStyle = {
+        width: '300px',
+        height: '200px',
+        margin: '50px auto',
+        padding: '20px',
+        backgroundColor: '#f9f9f9',
+        border: '2px solid #ccc',
+        borderRadius: '10px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1)',
+        textAlign: 'center',
+        fontFamily: 'Arial, sans-serif'
+    };
+
+    const headingStyle = {
+        color: '#333',
+        marginBottom: '10px'
+    };
+
+    const paragraphStyle = {
+        color: '#666',
+        lineHeight: '1.5'
+    };
 
     return (
 
@@ -102,7 +128,7 @@ function App() {
                                         <a href="index.html">
                                             <img
                                                 style={{ backgroundColor: 'red' }}
-                                                src={logo5} alt="Madhya Pradesh" width="80" />
+                                                src={logo6} alt="Madhya Pradesh" width="160" />
                                         </a>
                                     </div>
                                     <div className="logo-title">
@@ -114,106 +140,9 @@ function App() {
                         </div>
                     </div>
                 </div>
-
-                <div id="navigation">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-10">
-                                <nav className="navbar navbar-expand-lg navbar-light justify-content-between flex-wrap p-0">
-                                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                                        <span className="fa fa-bars"></span>
-                                    </button>
-                                    <div className="collapse navbar-collapse" id="menu">
-                                        <ul className="navbar-nav mr-auto">
-                                            <li className="active"><a href="index.html"> <em className="it-home"></em> Home </a></li>
-                                            <li className="nav-item dropdown">
-                                                <a href="javascript:void(0);" className="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">About JDA</a>
-                                                <ul className="dropdown-menu">
-                                                    <li className="dropdown-submenu">
-                                                        <a href="#">About JDA</a>
-                                                        <a href="#">Board Member</a>
-                                                        <a href="#">Organizational Structure</a>
-                                                        <a href="#">Gallary</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li className="nav-item dropdown">
-                                                <a href="#">Town Planning</a>
-                                                <ul class="dropdown-menu">
-                                                    <li>
-                                                        <a href="#">Master Plan 2021</a>
-                                                    </li>
-                                                    <li class="dropdown-submenu">
-                                                        <a href="#">Schemes</a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a href="#">Transferred</a></li>
-                                                            <li><a href="#"> Running</a></li>
-                                                            <li><a href="#"> Upcoming</a></li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li className="nav-item dropdown">
-                                                <a href="#">Notice Board</a>
-                                                <ul className="dropdown-menu">
-                                                    <li className="dropdown-submenu">
-                                                        <a href="#">Acts/Rules/Circulars</a>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a href="#">1973 Act</a></li>
-                                                            <li><a href="#"> व्ययन नियम 2013</a></li>
-                                                            <li><a href="#"> व्ययन नियम 2018</a></li>
-                                                            <li><a href="#"> RERA Act</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li >
-                                                        <a href="#">Important Notices</a>
-
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li className="nav-item dropdown">
-                                                <a href="#">Citizen Services</a>
-                                                <ul className="dropdown-menu">
-                                                    <li className="dropdown-submenu">
-                                                        <a href="#">Download Formats</a>
-                                                        <a href="#">Time Limits</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li className="nav-item dropdown">
-                                                <a href="#">Properties</a>
-                                                <ul className="dropdown-menu">
-                                                    <li className="dropdown-submenu">
-                                                        <a href="#">Properties for Sale</a>
-                                                        <a href="#">Express Your Interest</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li className="nav-item dropdown">
-                                                <a href="#">Online Services</a>
-                                                <ul className="dropdown-menu">
-                                                    <li className="dropdown-submenu">
-                                                        <a href="#">Pay Your Dues</a>
-                                                        <a href="#">Properties for Sale</a>
-                                                        <a href="#">Tenders</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </nav>
-                            </div>
-                            <div className="col-lg-2 d-flex justify-content-end abs_xs">
-                                <div className="searchbox">
-                                    <input className="form-control" placeholder="Search" aria-label="Search" type="text" />
-                                    <button className="btn btn-sm" type="button">
-                                        <i className="fa fa-search"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <>
+                    <Navbar />
+                </>
             </div>
             {/* -----------NNNNNn222--------------- */}
             {/* <!-- /navigation --> */}
@@ -279,107 +208,117 @@ function App() {
                         </div>
                     </div>
                     <div className="sec-pad implinks pr">
-                        <div style={{ display: 'flex', flexDirection: 'row', width: '100%', backgroundColor: 'pink', height: '100%' }}>
-                            <div style={{ justifyContent: 'space-between', padding: '10px', justifyContent: 'center', alignContent: 'center' }} >
-                                <div style={{ background: 'skyblue', width: '100%', padding: '10px', justifyContent: 'space-between' }}>
+                        <div style={{ display: 'flex', flexDirection: 'row', backgroundColor: '', zIndex: '1', position: 'relative' }}>
+                            <div style={{ justifyContent: 'space-between', padding: '10px', justifyContent: 'center', alignContent: 'center', flexWrap: 'wrap' }} >
+                                <div style={{ width: '100%', padding: '10px', justifyContent: 'space-between', border: '1px solid rgba(0, 0, 0, 0.1)', boxShadow: '0 2px 4px black', borderRadius: '10px', backgroundColor: '#e8dada' }}>
+
+
                                     <div style={{ display: 'flex', flexDirection: 'row' }}>
-                                        <div style={{justifyContent:'center',alignContent:'center'}}>
+                                        <div style={{ display: 'flex', flexWrap: 'wrap', alignSelf: 'center', alignItems: 'center', textAlign: 'center', alignContent: 'center' }}>
                                             <img
-                                                style={{ height: '200px', width: '130px', borderRadius: '20px', margin: '5px' }}
+                                                style={{ height: '15vw', width: '50vw', borderRadius: '20px', margin: '5px', zIndex: '1', border: '1px solid rgba(0, 0, 0, 0.1)', boxShadow: '1px 4px 4px #34495E' }}
                                                 src={chairmen} alt="" />
-                                            <div style={{ alignItems: 'center', justifyContent: 'center', alignContent: 'center', textAlign: 'center' }}>
-                                                <h6>Shri Abhay Verma</h6>
-                                                <p>Chairmen</p>
+                                            <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', alignSelf: 'center', textAlign: 'center' }}>
+                                                <div>
+                                                    <p style={{ fontSize: '1.5vw', color: 'red', fontWeight: 'bold' }}>Chairmen</p>
+                                                    <h6 style={{ fontSize: '1.5vw', fontWeight: 'bold', marginTop: '-1vw' }}>Shri Abhay Verma</h6>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div >
-                                        </div>
-                                        <div style={{ margin: '5px', backgroundColor: 'lightgreen', justifyContent: 'center', alignSelf: 'center',textAlign:'center' }}>
-                                            Our city is not just a place on the map; it's our home, our community, and our shared responsibility. Together, we have the power to shape its future, to build a thriving, sustainable environment where every individual can flourish. <br></br>
 
-                                            I urge you to join hands with us in our efforts to enhance the infrastructure, preserve our natural resources, and foster a spirit of unity and progress. Your participation, your ideas, and your commitment are vital in realizing our collective vision for Jabalpur.<br></br>
+                                        <div style={{ margin: '10px', marginTop: '0px', justifyContent: 'center', textAlign: 'center', fontSize: '1.2vw', zIndex: '1' }}>
+                                            <p style={{ lineHeight: 1.3 }}>
+                                                Our city is not just a place on the map; it's our home, our community, and our shared responsibility. Together, we have the power to shape its future, to build a thriving, sustainable environment where every individual can flourish.
+                                                <br></br>
 
-                                            Let's work together to create a city we can all be proud of—one that is inclusive, vibrant, and full of opportunity.
+                                                I urge you to join hands with us in our efforts to enhance the infrastructure, preserve our natural resources, and foster a spirit of unity and progress. Your participation, your ideas, and your commitment are vital in realizing our collective vision for Jabalpur.<br></br>
+
+                                                Let's work together to create a city we can all be proud of—one that is inclusive, vibrant, and full of opportunity.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div style={{ justifyContent: 'space-between', padding: '10px', justifyContent: 'center', alignContent: 'center' }} >
-                                <div style={{ background: 'skyblue', width: '100%', padding: '10px', justifyContent: 'space-between' }}>
+                            <div style={{ justifyContent: 'space-between', padding: '10px', justifyContent: 'center', alignContent: 'center', flexWrap: 'wrap' }} >
+                                <div style={{ width: '100%', padding: '10px', justifyContent: 'space-between', border: '1px solid rgba(0, 0, 0, 0.1)', boxShadow: '0 2px 4px black', borderRadius: '10px', backgroundColor: '#C0C0C0' }}>
+
+
                                     <div style={{ display: 'flex', flexDirection: 'row' }}>
-                                        <div>
+                                        <div style={{ display: 'flex', flexWrap: 'wrap', alignSelf: 'center', alignItems: 'center', textAlign: 'center', alignContent: 'center' }}>
                                             <img
-                                                style={{ height: '200px', width: '130px', borderRadius: '20px', margin: '5px' }}
-                                                src={chairmen} alt="" />
-                                            <div style={{ alignItems: 'center', justifyContent: 'center', alignContent: 'center', textAlign: 'center' }}>
-                                                <h6>Shri Abhay Verma</h6>
-                                                <p>Chairmen</p>
+                                                style={{ height: '15vw', width: '50vw', borderRadius: '20px', margin: '5px', zIndex: '1', border: '1px solid rgba(0, 0, 0, 0.1)', boxShadow: '1px 4px 4px #34495E' }}
+                                                src={ceo1} alt="" />
+                                            <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', alignSelf: 'center', textAlign: 'center' }}>
+                                                <div>
+                                                    <p style={{ fontSize: '1.5vw', color: 'red', fontWeight: 'bold' }}>CEO</p>
+                                                    <h6 style={{ fontSize: '1.4vw', fontWeight: 'bold', marginTop: '-1vw' }}>Shri Deepak K Vaidya</h6>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div >
-                                        </div>
-                                        <div style={{ margin: '5px', backgroundColor: 'lightgreen', justifyContent: 'center', alignSelf: 'center' ,textAlign:'center'}}>
-                                            Our city is not just a place on the map; it's our home, our community, and our shared responsibility. Together, we have the power to shape its future, to build a thriving, sustainable environment where every individual can flourish. <br></br>
 
-                                            I urge you to join hands with us in our efforts to enhance the infrastructure, preserve our natural resources, and foster a spirit of unity and progress. Your participation, your ideas, and your commitment are vital in realizing our collective vision for Jabalpur.<br></br>
+                                        <div style={{ margin: '10px', marginTop: '0px', justifyContent: 'center', textAlign: 'center', fontSize: '1.2vw', zIndex: '1' }}>
+                                            <p style={{ lineHeight: 1.3 }}>
+                                                Jabalpur is on a journey of growth and transformation, and your role in this journey is paramount. Your feedback, engagement, and active participation are crucial as we strive to create a city that meets the needs and aspirations of every citizen.<br></br>
 
-                                            Let's work together to create a city we can all be proud of—one that is inclusive, vibrant, and full of opportunity.
+                                                I encourage you to voice your concerns, share your ideas, and collaborate with us in shaping the future of Jabalpur. Together, let's work towards building a sustainable, inclusive, and vibrant community that we can all be proud to call home.<br></br>
+
+                                                Thank you for your continued support and commitment to Jabalpur's development.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                           
-
                         </div>
-                        {/* <div className="container">
-                            <div className="member-box">
-                                <div className="col-md-4">
-                                    <div className="minister-slider1">
-                                        <div>
-                                            <div className="text-center d-flex flex-column pr justify-content-center">
-                                                <div className="img-holder">
-                                                    <img src={chairmen} alt="Chairman" />
-                                                </div>
-                                                <div className="name">
-                                                    <div className="ribbon">
-                                                        Shri Abhay Verma <br />
-                                                        <small>Chairman</small>
-                                                    </div>
-                                                </div>
+                    </div>
+
+                    {/* <div className="sec-pad implinks pr">
+                        <div className="flex-row">
+                            <div className="card">
+                                <div className="flex-row">
+                                    <div className="image-container">
+                                        <img src={chairmen} alt="Chairmen" />
+                                        <div className="text-center">
+                                            <div>
+                                                <p className="title red">Chairmen</p>
+                                                <h6 className="name">Shri Abhay Verma</h6>
                                             </div>
-                                        </div>
-                                        <div align="center">
-                                            <a href="#" target="_blank"><img src={F} width="41" height="39" alt="Facebook" /></a>
-                                            <a href="#" target="_blank"><img src={T} width="44" height="41" alt="Twitter" /></a>
-                                            <a href="#" target="_blank"><img src={I} width="46" height="44" alt="Instagram" /></a>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="col-md-4">
-                                    <div className="minister-slider1">
-                                        <div>
-                                            <div className="text-center d-flex flex-column pr justify-content-center">
-                                                <div className="img-holder">
-                                                    <img src={ceo1} alt="Chairman" />
-                                                </div>
-                                                <div className="name">
-                                                    <div className="ribbon">
-                                                        Shri Deepak Kumar Vaidya <br />
-                                                        <small>Chief Executive Officer</small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div align="center">
-                                            <a href="#" target="_blank"><img src={F} width="41" height="39" alt="Facebook" /></a>
-                                            <a href="#" target="_blank"><img src={T} width="44" height="41" alt="Twitter" /></a>
-                                            <a href="#" target="_blank"><img src={I} width="46" height="44" alt="Instagram" /></a>
-                                        </div>
+                                    <div className="message">
+                                        <p>
+                                            Our city is not just a place on the map; it's our home, our community, and our shared responsibility. Together, we have the power to shape its future, to build a thriving, sustainable environment where every individual can flourish.
+                                            <br /><br />
+                                            I urge you to join hands with us in our efforts to enhance the infrastructure, preserve our natural resources, and foster a spirit of unity and progress. Your participation, your ideas, and your commitment are vital in realizing our collective vision for Jabalpur.
+                                            <br /><br />
+                                            Let's work together to create a city we can all be proud of—one that is inclusive, vibrant, and full of opportunity.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
-                        </div> */}
-                    </div>
+                            <div className="card">
+                                <div className="flex-row">
+                                    <div className="image-container">
+                                        <img src={ceo1} alt="CEO" />
+                                        <div className="text-center">
+                                            <div>
+                                                <p className="title red">CEO</p>
+                                                <h6 className="name">Shri Deepak K Vaidya</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="message">
+                                        <p>
+                                            Jabalpur is on a journey of growth and transformation, and your role in this journey is paramount. Your feedback, engagement, and active participation are crucial as we strive to create a city that meets the needs and aspirations of every citizen.
+                                            <br /><br />
+                                            I encourage you to voice your concerns, share your ideas, and collaborate with us in shaping the future of Jabalpur. Together, let's work towards building a sustainable, inclusive, and vibrant community that we can all be proud to call home.
+                                            <br /><br />
+                                            Thank you for your continued support and commitment to Jabalpur's development.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> */}
                 </div>
 
                 {/* ------------------NNNN3333------------------ */}
@@ -450,14 +389,13 @@ function App() {
                 {/* ----------Start Partner----------------- */}
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-12">
+                        {/* <div className="col-md-12">
                             <div>
                                 <div className="detail">
                                     <ul>
                                         <li>
                                             <a href="#" target="_blank">
                                                 <em className="mdi mdi-home-heart"></em>
-                                                {/* <RiHomeHeartFill />  */}
                                                 <span> ICCC</span>
                                             </a>
                                         </li>
@@ -506,7 +444,7 @@ function App() {
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* <div className="col-md-5">
                             <FacebookUpdates />
@@ -520,7 +458,7 @@ function App() {
                 {/* ----------End Partner---------- */}
                 {/* ----------------Fackbook update---------------------- */}
 
-                <div class="container">
+                {/* <div class="container">
                     <div class="row">
                         <div class="col-md-5">
                             <div class="socialbox fb-post">
@@ -541,13 +479,12 @@ function App() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 {/* -----------------NNNN5555-------------------- */}
 
                 {/* <!--  partners --> */}
-
-                <div class="partners-section">
+                {/* <div class="partners-section">
                     <div class="container">
                         <div class="logo-slider">
                             <div>
@@ -586,27 +523,27 @@ function App() {
                                     </div>
                                 </a>
                             </div>
-                            {/* <div>
+                            <div>
                                 <a href="https://invest.mp.gov.in/" target="_blank" title="Invest MP">
                                     <div class="img-box">
                                         <img alt="Invest MP" src={mpdc} />
                                     </div>
                                 </a>
-                            </div> */}
-                            {/* <div>
+                            </div>
+                            <div>
                                 <a href="http://tourism.mp.gov.in/" target="_blank" title="MP Tourism">
                                     <div class="img-box">
                                         <img alt="MP Tourism" src={mptourism} />
                                     </div>
                                 </a>
-                            </div> */}
-                            {/* <div>
+                            </div>
+                            <div>
                                 <a href="http://www.friendsofmp.gov.in/" target="_blank" title="Friends of MP">
                                     <div class="img-box">
                                         <img alt="Friends of MP" src={fomp} />
                                     </div>
                                 </a>
-                            </div> */}
+                            </div>
                             <div >
                                 <a href="http://dial.gov.in/" target="_blank" title="डायल गवर्नमेंट ">
                                     <div class="img-box">
@@ -628,13 +565,11 @@ function App() {
                                     </div>
                                 </a>
                             </div>
-
-
                         </div>
                     </div>
-                </div>
-                {/* <ButtomSlider /> */}
-            </main>
+                </div> */}
+                <ButtomSlider />
+           
             {/* <div class='CustPartner'>
                     <div style={{flexDirection:'row'}}>
                         <img src={india_gov} alt="" />
@@ -654,59 +589,22 @@ function App() {
 
 
             {/* --------------------NNNN666666------------------ */}
-            <footer className="footer">
-                <a href="#" className="back-top" id="gotop">
-                    <span className="fa fa-angle-up"></span>
-                </a>
-                <div className="container pr">
-                    <div className="row">
-                        <div className="col-lg-9 flinks mb-2">
-                            <h4>Important Links</h4>
-                            <ul>
-                                <li><a href="https://jabalpur.nic.in/" target="_blank" rel="noopener noreferrer">District Administration</a></li>
-                                <li><a href="http://nagarnigamjabalpur.com/" target="_blank" rel="noopener noreferrer">Nagar Nigam Jabalpur</a></li>
-                            </ul>
-                        </div>
-                        <div className="col-lg-3">
-                            <h4>Follow us on</h4>
-                            <div className="social-buttons">
-                                <a href="https://www.facebook.com/SmartCityJabalpur" target="_blank" rel="noopener noreferrer" className="social-margin" title="facebook">
-                                    <div className="social-icon facebook">
-                                        {/* <i className="fa fa-facebook" aria-hidden="true"></i> */}
-                                        {/* <i class="fa-brands fa-facebook"></i> */}
-                                        {/* <FontAwesomeIcon icon="fa-brands fa-facebook" /> */}
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                    </div>
-                                </a>
-                                <a href="https://twitter.com/@jscljbalpur" target="_blank" rel="noopener noreferrer" className="social-margin" title="twitter">
-                                    <div className="social-icon twitter">
-                                        <i className="fa fa-twitter" aria-hidden="true">
-                                            {/* <img src={T}
-                                        style={{width:'12px',height:'12px', alignSelf:'center'}}
-                                        /> */}
-
-                                        </i>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="footer-bottom">
-                    <div className="container pr">
-                        <div className="float-left text-center text-md-left">Site Developed by <a href="https://jscljabalpur.org/index.html" target="_blank" rel="noopener noreferrer">Jabalpur Smart City Limited</a></div>
-                        <div className="clearfix"></div>
-                    </div>
-                </div>
-            </footer>
 
 
-            {/* ---------------NNN7777---------------- */}
+
+            {/* ---------------Footer start---------------- */}
+
+
+            </main>
+            <Footer />
+
+            {/* ---------------Footer end---------------- */}
 
 
 
         </div>
     );
+
 }
 
 export default App;
