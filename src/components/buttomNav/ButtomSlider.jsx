@@ -17,15 +17,22 @@ function ButtomSlider() {
         <img src={rajbhavan} alt="Raj Bhavan" loading="lazy" />
         <img src={mapit} alt="MAP IT" loading="lazy" />
         <img src={mptourism} alt="MP Tourism" loading="lazy" />
-        <img style={{ backgroundColor: 'white' }} src={india_gov} alt="India Gov" loading="lazy" />
+        <img style={{ backgroundColor: 'white' }} src={dialgov} alt="India Gov" loading="lazy" />
+        <img src={mygov} alt="MP Tourism" loading="lazy" />
+        <img src={swachbharat} alt="MP Tourism" loading="lazy" />
+        {/* <img src={india_gov} alt="India Gov" loading="lazy" /> */}
       </div>
-      <div className='logos-slide'>
-        <img src={mapit} alt="MAP IT" loading="lazy" />
+      <div className='logos-slide' style={{margin:'0px 30px'}}>
         <img src={mpdc} alt="MPDC" loading="lazy" />
         <img src={rajbhavan} alt="Raj Bhavan" loading="lazy" />
+        <img src={mapit} alt="MAP IT" loading="lazy" />
         <img src={mptourism} alt="MP Tourism" loading="lazy" />
-        <img style={{ backgroundColor: 'white' }} src={india_gov} alt="India Gov" loading="lazy" />
+        <img style={{ backgroundColor: 'white' }} src={dialgov} alt="India Gov" loading="lazy" />
+        <img src={mygov} alt="MP Tourism" loading="lazy" />
+        <img src={swachbharat} alt="MP Tourism" loading="lazy" />
+        {/* <img src={india_gov} alt="India Gov" loading="lazy" /> */}
       </div>
+      
     </div>
   )
 }

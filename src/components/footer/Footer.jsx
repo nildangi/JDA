@@ -81,7 +81,7 @@ const Footer = () => {
                                                 <hr className="c-separator m-transparent hidden-lg hidden-md" />
                                                 <div className="widget-inner">
                                                     <h3 className="widget-title m-has-ico">
-                                                        <i className="widget-ico tp tp-at-sign"></i>Join Our Newsletter
+                                                        {/* <i className="widget-ico tp tp-at-sign"></i>Join Our Newsletter */}
                                                         <i className="widget-ico tp "><FaNewspaper /></i>Join Our Newsletter
                                                     </h3>
                                                     <div className="widget-content">
