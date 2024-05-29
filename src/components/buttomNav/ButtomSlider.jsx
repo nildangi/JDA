@@ -31,8 +31,7 @@ function ButtomSlider() {
         <img src={mygov} alt="MP Tourism" loading="lazy" />
         <img src={swachbharat} alt="MP Tourism" loading="lazy" />
         {/* <img src={india_gov} alt="India Gov" loading="lazy" /> */}
-      </div>
-      
+      </div>  
     </div>
   )
 }

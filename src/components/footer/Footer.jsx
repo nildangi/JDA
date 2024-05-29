@@ -9,7 +9,7 @@ import { FaAngleDoubleRight, FaChevronRight, FaSpinner, FaTwitter, FaFacebook, F
 
 const Footer = () => {
     return (
-        <footer id="footer" className="m-has-bg">
+        <footer id="footer" className=" m-has-bg">
             <div className="footer-bg">
                 <div className="footer-inner">
                     {/* FOOTER TOP : begin */}
@@ -28,22 +28,22 @@ const Footer = () => {
                                                     <div className="widget-content">
                                                         <h3>
                                                             <a 
-                                                             style={{fontSize:'22px'}}
+                                                             style={{fontSize:'18px'}}
                                                             href="#">
                                                                 <FaAngleDoubleRight />&nbsp;Disclaimer
                                                             </a><br />
                                                             <a 
-                                                             style={{fontSize:'22px'}}
+                                                             style={{fontSize:'18px'}}
                                                             href="#">
                                                                 <FaAngleDoubleRight />Hyperlinking Policy
                                                             </a><br />
                                                             <a 
-                                                            style={{fontSize:'22px'}}
+                                                            style={{fontSize:'18px'}}
                                                             href="#">
                                                                 <FaAngleDoubleRight />&nbsp;Privacy Policy
                                                             </a><br />
                                                             <a 
-                                                             style={{fontSize:'22px'}}
+                                                             style={{fontSize:'18px'}}
                                                             href="#" target="_blank" rel="noopener noreferrer">
                                                                 <FaAngleDoubleRight />&nbsp;Staff Login
                                                             </a>

@@ -8299,7 +8299,8 @@ fieldset legend {
 
 #footer {
     position: relative;
-    z-index: 10
+    z-index: 10;
+    background-color: red;
 }
 
 #footer.m-has-bg {
@@ -8331,7 +8332,7 @@ fieldset legend {
 }
 
 #footer.m-has-bg .footer-inner {
-    padding-top: 30px
+    padding-top: 100px
 }
 
 .footer-top {

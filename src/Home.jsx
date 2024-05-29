@@ -8,7 +8,7 @@ import Slider from '../src/components/Slider'
 import { Carousel } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Navbar from './components/navbar/Navbar'
-
+import TextSlider from './components/textSlide/TextSlider'
 
 // <=======CSS======>
 import './App.css';
@@ -93,11 +93,10 @@ import { GrUpdate } from "react-icons/gr";
 
 function App() {
 
-
     return (
         <div id="dvCategoryResults" className="main">
 
-            
+
             {/* -----------NNNNNn222--------------- */}
             {/* <!-- /navigation --> */}
 
@@ -116,26 +115,7 @@ function App() {
                         `}
                         </style>
 
-                        {/* <div className="home-fixed-slider pr slider-wrapper theme-default">
-                            <div id="slider" className="nivoSlider">
-                                <img style={{ position: 'relative' }} src={back3} alt="Slider Image 1" />
-                                <img style={{ position: 'relative' }} src={back1} data-thumb="images/slider/back3.JPG" alt="Slider Image 2" />
-                                <img style={{ position: 'relative' }} src={building1} data-thumb="images/slider/oat.jpg" alt="Slider Image 3" />
-                                <img style={{ position: 'relative' }} src={oat} data-thumb="images/slider/building.jpeg" alt="Slider Image 4" />
-                            </div>
-                            <button id="Pause" type="button" className="control"><span className="fa fa-pause"></span></button>
-                            <button id="Play" type="button" className="control"><span className="fa fa-play"></span></button>
-                        </div> */}
-
-
-
                         <div className="home-fixed">
-                            <div id="slider" className="nivoSlider">
-                                {/* //<img src={mpdc} />  */}
-                                {/* <img
-                                    style={{ position: 'relative' }}
-                                    src={back3} /> */}
-                            </div>
                             <Slider />
                         </div>
 
@@ -280,76 +260,7 @@ function App() {
 
 
                 {/* // ---------------NNNNN4444444--------------- */}
-                {/* ----------Start Partner----------------- */}
-                <div className="container">
-                    <div className="row">
-                        {/* <div className="col-md-12">
-                            <div>
-                                <div className="detail">
-                                    <ul>
-                                        <li>
-                                            <a href="#" target="_blank">
-                                                <em className="mdi mdi-home-heart"></em>
-                                                <span> ICCC</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" target="_blank">
-                                                <em className="mdi mdi-car-connected"></em>
-                                                <span> ITMS </span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" target="_blank">
-                                                <em className="mdi mdi-book-multiple"></em>
-                                                <span>Waste to Energy</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" target="_blank">
-                                                <em className="mdi mdi-certificate"></em>
-                                                <span>MLCP</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" target="_blank">
-                                                <em className="mdi mdi-folder-account"></em>
-                                                <span>OAT</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <em className="mdi mdi-map"></em>
-                                                <span>Smart Road</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" target="_blank">
-                                                <em className="mdi mdi-leaf"></em>
-                                                <span>Smart Light</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" target="_blank">
-                                                <em className="mdi mdi-home"></em>
-                                                <span>Incubation Center</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div> */}
-
-                        {/* <div className="col-md-5">
-                            <FacebookUpdates />
-                        </div>
-                        <div className="col-md-7">
-                            <TwitterUpdates />
-                        </div> */}
-
-                    </div>
-                </div>
-                {/* ----------End Partner---------- */}
+               
 
 
                 {/* -----------------NNNN5555-------------------- */}
@@ -439,7 +350,13 @@ function App() {
                         </div>
                     </div>
                 </div> */}
-                <ButtomSlider />
+
+                {/* <>
+                <TextSlider />
+                </> */}
+                <div >
+                    <ButtomSlider />
+                </div>
 
 
                 {/* <!-- partners end--> */}
