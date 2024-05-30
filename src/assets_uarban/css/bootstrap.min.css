@@ -409,7 +409,8 @@ template {
 }
 
 .h3,h3 {
-    font-size: 1.75rem
+    /* font-size: 1.75rem */
+    font-size: 1.3rem
 }
 
 .h4,h4 {

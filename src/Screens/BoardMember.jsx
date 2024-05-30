@@ -5,7 +5,8 @@ function BoardMember() {
     container: {
       textAlign: 'center',
       padding: '20px',
-      fontFamily: 'Arial, sans-serif'
+      fontFamily: 'Arial, sans-serif',
+      width:'100%'
     },
     heading: {
       color: '#2c3e50',
@@ -16,14 +17,16 @@ function BoardMember() {
       color: '#34495e',
       fontSize: '1.2em',
       lineHeight: '1.6',
-      maxWidth: '800px',
+      // maxWidth: '800px',
       margin: '0 auto',
       textAlign: 'justify'
     },
     table: {
       width: '80%',
       margin: '20px auto',
-      borderCollapse: 'collapse'
+      borderCollapse: 'collapse',
+      textAlign:'center'
+      
     },
     th: {
       border: '1px solid #ddd',

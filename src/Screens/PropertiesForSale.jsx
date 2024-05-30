@@ -18,7 +18,6 @@ const PropertiesForSale = () => {
       color: '#34495e',
       fontSize: '1.2em',
       lineHeight: '1.6',
-      maxWidth: '1000px',
       margin: '0 auto',
       textAlign: 'justify',
 

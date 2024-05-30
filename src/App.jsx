@@ -12,8 +12,19 @@ import DownloadFormate from './Screens/DownloadFormate'
 import Gallery from './Screens/Gallery'
 import OrganizationalStructure from './Screens/OrganizationalStructure'
 import BoardMember from './Screens/BoardMember'
+import Transferred from './Screens/Transferred'
+import Upcoming from './Screens/Upcoming'
+import Running from './Screens/Running'
+import Niyam2013 from './Screens/Niyam2013'
+import Niyam2018 from './Screens/Niyam2018'
+import RERAAct from './Screens/RERAAct'
+import ImportantNotices from './Screens/ImportantNotices'
+import TimeLimits from './Screens/TimeLimits'
+import ExpressYourInterest from './Screens/ExpressYourInterest'
+import Tenders from './Screens/Tenders'
 
 const App = () => {
+  
   return (
 
     <BrowserRouter>
@@ -30,6 +41,16 @@ const App = () => {
         <Route path="/Gallery" element={<Gallery />} />
         <Route path="/OrganizationalStructure" element={<OrganizationalStructure />} />
         <Route path="/BoardMember" element={<BoardMember />} />
+        <Route path="/Transferred" element={<Transferred />} />
+        <Route path="/Running" element={<Running />} />
+        <Route path="/Upcoming" element={<Upcoming />} />
+        <Route path="/Niyam2013" element={<Niyam2013 />} />
+        <Route path="/Niyam2018" element={<Niyam2018 />} />
+        <Route path="/RERAAct" element={<RERAAct />} />
+        <Route path="/ImportantNotices" element={<ImportantNotices />} />
+        <Route path="/TimeLimits" element={<TimeLimits />} />
+        <Route path="/ExpressYourInterest" element={<ExpressYourInterest />} />
+        <Route path="/Tenders" element={<Tenders />} />
         {/* <Route path="/" element={< />} /> */}
     </Routes>
     <Footer />

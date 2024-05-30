@@ -1,10 +1,10 @@
 import React from 'react'
-import '../../App.css'
+// import '../../App.css'
 // import '../../assets_uarban/css/main.css'
 // import '../../assets_uarban/css/animate.css'
-import '../../assets_uarban/css/bootstrap.min.css'
+// import '../../assets_uarban/css/bootstrap.min.css'
 
-import About from '../../Screens/About';
+
 import { FaHome, FaSearch, FaBars } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import logo3 from '../../images/header/logo3.png'
@@ -40,9 +40,9 @@ function Navbar() {
                     </div>
                 </div>
             </div>
-            <div id="navigation">
+            <div id="navigation" >
                 <div className="container">
-                    <div className="row" style={{ justifyContent: 'space-between' }}>
+                    <div className="row" style={{ justifyContent: 'space-between'}}>
                         <div className="col-lg-15">
                             <nav className="navbar navbar-expand-lg navbar-light justify-content-between flex-wrap p-0">
                                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,63 +66,63 @@ function Navbar() {
                                             </ul>
                                         </li>
                                         <li className="nav-item dropdown">
-                                            <a href="#">Town Planning</a>
+                                            <a href="#" className=" dropdown-toggle">Town Planning</a>
                                             <ul class="dropdown-menu">
                                                 <li>
                                                     <NavLink to="/MasterPlan">Master Plan 2021</NavLink>
                                                 </li>
                                                 <li class="dropdown-submenu">
-                                                    <a href="#">Schemes</a>
+                                                    <a href="#" className="dropdown-toggle">Schemes</a>
                                                     <ul class="dropdown-menu">
-                                                        <li><a href="#">Transferred</a></li>
-                                                        <li><a href="#"> Running</a></li>
-                                                        <li><a href="#"> Upcoming</a></li>
+                                                        <li><NavLink to="/transferred">Transferred</NavLink></li>
+                                                        <li><NavLink to="/running"> Running</NavLink></li>
+                                                        <li><NavLink to="/upcoming"> Upcoming</NavLink></li>
                                                     </ul>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className="nav-item dropdown">
-                                            <a href="#">Notice Board</a>
+                                            <a href="#" className=" dropdown-toggle">Notice Board</a>
                                             <ul className="dropdown-menu">
                                                 <li className="dropdown-submenu">
-                                                    <a href="#">Acts/Rules/Circulars</a>
+                                                    <a href="#" className="dropdown-toggle">Acts/Rules/Circulars</a>
                                                     <ul class="dropdown-menu">
                                                         <li><NavLink to="/Act1973">1973 Act</NavLink></li>
-                                                        <li><a href="#"> व्ययन नियम 2013</a></li>
-                                                        <li><a href="#"> व्ययन नियम 2018</a></li>
-                                                        <li><a href="#"> RERA Act</a></li>
+                                                        <li><NavLink to="/Niyam2013"> व्ययन नियम 2013</NavLink></li>
+                                                        <li><NavLink to="/Niyam2018"> व्ययन नियम 2018</NavLink></li>
+                                                        <li><NavLink to="/RERAAct"> RERA Act</NavLink></li>
                                                     </ul>
                                                 </li>
                                                 <li >
-                                                    <a href="#">Important Notices</a>
+                                                    <NavLink to="/importantnotices">Important Notices</NavLink>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className="nav-item dropdown">
-                                            <a href="#">Citizen Services</a>
+                                            <a href="#" className="dropdown-toggle">Citizen Services</a>
                                             <ul className="dropdown-menu">
                                                 <li className="dropdown-submenu">
                                                     <NavLink to="/DownloadFormate">Download Formats</NavLink>
-                                                    <a href="#">Time Limits</a>
+                                                    <NavLink to="/timelimits">Time Limits</NavLink>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className="nav-item dropdown">
-                                            <a href="#">Properties</a>
+                                            <a href="#" className="dropdown-toggle">Properties</a>
                                             <ul className="dropdown-menu">
                                                 <li className="dropdown-submenu">
                                                     <NavLink to="/PropertiesForSale">Properties for Sale</NavLink>
-                                                    <a href="#">Express Your Interest</a>
+                                                    <NavLink to="/Expressyourinterest">Express Your Interest</NavLink>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li className="nav-item dropdown">
-                                            <a href="#">Online Services</a>
+                                            <a href="#" className="dropdown-toggle">Online Services</a>
                                             <ul className="dropdown-menu">
                                                 <li className="dropdown-submenu">
                                                     <NavLink to="/PayYourDue">Pay Your Dues</NavLink>
-                                                    <a href="#">Properties for Sale</a>
-                                                    <a href="#">Tenders</a>
+                                                    <NavLink to="/propertiesforsale">Properties for Sale</NavLink>
+                                                    <NavLink to="/tenders">Tenders</NavLink>
                                                 </li>
                                             </ul>
                                         </li>

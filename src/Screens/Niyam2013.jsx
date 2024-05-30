@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PayYourDue = () => {
+const Niyam2013 = () => {
   const styles = {
     container: {
       textAlign: 'center',
@@ -27,13 +27,14 @@ const PayYourDue = () => {
   return (
     <>
       <div style={styles.container}>
-        <h1 style={styles.heading}>Pay Your Due</h1>
+        <h1 style={styles.heading}>Niyam 2013</h1>
         <p style={styles.paragraph}>
-       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quos pariatur quidem, iste quas at consequatur atque autem veritatis mollitia impedit dignissimos. Cupiditate, nostrum odit? Ea ab error voluptate porro. Corrupti obcaecati illum optio autem expedita officia dolorem mollitia. Voluptatem?
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quos pariatur quidem, iste quas at consequatur atque autem veritatis mollitia impedit dignissimos. Cupiditate, nostrum odit? Ea ab error voluptate porro. Corrupti obcaecati illum optio autem expedita officia dolorem mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, facilis sequi doloribus corporis nostrum vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, voluptate.
        </p>
       </div>
     </>
   )
 }
 
-export default PayYourDue
+
+export default Niyam2013

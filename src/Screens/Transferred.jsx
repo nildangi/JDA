@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DownloadFormate = () => {
+const Transferred = () => {
   const styles = {
     container: {
       textAlign: 'center',
@@ -27,13 +27,13 @@ const DownloadFormate = () => {
   return (
     <>
       <div style={styles.container}>
-        <h1 style={styles.heading}>Download Formate</h1>
+        <h1 style={styles.heading}>Transferred</h1>
         <p style={styles.paragraph}>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem error non, illum expedita alias officia! Reprehenderit sed eos voluptas molestiae eaque vitae temporibus fugiat, iure quidem accusantium, maxime totam dolor.
-        </p>
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quos pariatur quidem, iste quas at consequatur atque autem veritatis mollitia impedit dignissimos. Cupiditate, nostrum odit? Ea ab error voluptate porro. Corrupti obcaecati illum optio autem expedita officia dolorem mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, facilis sequi doloribus corporis nostrum vitae.
+       </p>
       </div>
     </>
   )
 }
 
-export default DownloadFormate
+export default Transferred
