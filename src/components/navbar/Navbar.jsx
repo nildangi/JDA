@@ -1,14 +1,14 @@
 import React from 'react'
+import { FaHome, FaSearch, FaBars } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
+import logo3 from '../../images/header/logo3.png'
+
+//<-------CSS Fils--------->
 // import '../../App.css'
 // import '../../assets_uarban/css/main.css'
 // import '../../assets_uarban/css/animate.css'
 // import '../../assets_uarban/css/bootstrap.min.css'
 
-
-import { FaHome, FaSearch, FaBars } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
-import logo3 from '../../images/header/logo3.png'
-import { Nav } from 'react-bootstrap';
 
 function Navbar() {
     return (
@@ -21,11 +21,11 @@ function Navbar() {
                                 <div className="col-sm-7">
                                     <div className="logo-holder">
                                         <div className="logo">
-                                            <a href="index.html">
+                                            <NavLink to="/">
                                                 <img
                                                     style={{ backgroundColor: 'white' }}
                                                     src={logo3} alt="Madhya Pradesh" width="70" />
-                                            </a>
+                                            </NavLink>
                                         </div>
                                         <div className="logo-title">
                                             {/* <h1> Jabalpur Development Authority </h1> */}
@@ -40,13 +40,13 @@ function Navbar() {
                     </div>
                 </div>
             </div>
-            <div id="navigation" >
+            <div id="navigation">
                 <div className="container">
-                    <div className="row" style={{ justifyContent: 'space-between'}}>
+                    <div className="row " style={{ justifyContent: 'space-between'}}>
                         <div className="col-lg-15">
                             <nav className="navbar navbar-expand-lg navbar-light justify-content-between flex-wrap p-0">
                                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span className="fa fa-bars"><FaBars color='white' /></span>
+                                    <span className=""><FaBars color='white' /></span>
                                 </button>
                                 <div className="collapse navbar-collapse" id="menu">
                                     <ul className="navbar-nav mr-auto">
@@ -130,7 +130,7 @@ function Navbar() {
                                 </div>
                             </nav>
                         </div>
-                        <div className="col-lg-2 d-flex justify-content-end abs_xs">
+                        <div className="col-lg-2 d-flex justify-content-end abs_xs ">
                             <div className="searchbox">
                                 <input className="form-control" placeholder="Search" aria-label="Search" type="text" />
                                 <button className="btn btn-sm" type="button" style={{ marginTop: '6px' }}>
@@ -138,6 +138,12 @@ function Navbar() {
                                 </button>
                             </div>
                         </div>
+
+                        {/* <div>
+                            <div style={{width:'150px',marginTop:'8px'}}>
+                            <input type="text" placeholder='Search..' style={{borderRadius:'30px',height:'35px',alignSelf:'center'}}/>
+                            </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

@@ -120,8 +120,8 @@ function App() {
                         </div>
 
 
-
                     </div>
+                    {/* <------Txt Slide Start------> */}
                     <div>
                         <div className="headertxt">
                             <div className="container">
@@ -141,6 +141,30 @@ function App() {
                             </div>
                         </div>
                     </div>
+                    {/* <------Txt Slide End------> */}
+                    
+                    {/* <div>
+                        <div class="headertxt">
+                            <div class="container">
+                                <div class="ticker1 modern-ticker mt-round">
+                                    <div class="mt-body">
+                                        <div class="mt-label"><em class="mdi mdi-bullhorn"></em> Updates</div>
+                                        <div class="mt-news">
+                                            <ul >
+                                                <li>
+                                                    <a href="" title=""> Email : ceojscl@mpurban.gov.in</a>
+                                                </li>
+                                                 <li></li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> */}
+
+
                     <div className="sec-pad implinks pr">
                         <div className='flex-row'>
                             <div className='parents-card'>
@@ -260,7 +284,7 @@ function App() {
 
 
                 {/* // ---------------NNNNN4444444--------------- */}
-               
+
 
 
                 {/* -----------------NNNN5555-------------------- */}

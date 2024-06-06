@@ -22,13 +22,14 @@ import ImportantNotices from './Screens/ImportantNotices'
 import TimeLimits from './Screens/TimeLimits'
 import ExpressYourInterest from './Screens/ExpressYourInterest'
 import Tenders from './Screens/Tenders'
-
+import {Header} from '../src/components/footer/navbar2/Header'
 const App = () => {
   
   return (
 
     <BrowserRouter>
     <Navbar />
+    {/* <Header /> */}
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
